@@ -1,3 +1,14 @@
+## Results
+
+| run       | time |
+|-----------|------|
+| 1 module  | 5s   |
+| 2 modules | 7s   |
+| 3 modules | 9s   |
+| 7 modules | 17s  |
+| 12 modules | 25s  |
+| 22 modules | 35s  |
+
 ## Single module with spark dependency
 
 around 5s
