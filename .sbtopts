@@ -1,0 +1,11 @@
+#misc sbt options
+#affects closeClassLoaders, but not allowZombieClassLoaders
+#-Dsbt.classloader.close=true #
+#traces
+-Dsbt.traces=true
+#timings see sbt.internal.TaskTimings
+-Dsbt.task.timings=true
+-Dsbt.task.timings.unit=s
+-Dsbt.task.timings.threshold=1
+#coursier
+#-Dcoursier.verbosity=1
