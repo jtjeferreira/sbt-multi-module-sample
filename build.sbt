@@ -11,10 +11,17 @@ lazy val root = (project in file("."))
     libraryDependencies += spark,
     libraryDependencies += scalaTest % Test
   )
-  .dependsOn(core)
-  .aggregate(core)
+  .dependsOn(core, util)
+  .aggregate(core, util)
 
 lazy val core = (project in file("modules/core"))
+  .settings(
+    name := "core",
+    libraryDependencies += spark,
+    libraryDependencies += scalaTest % Test
+  )
+
+lazy val util = (project in file("modules/util"))
   .settings(
     name := "core",
     libraryDependencies += spark,
