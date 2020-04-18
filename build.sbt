@@ -8,8 +8,6 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "Scala Seed Project",
-    libraryDependencies += spark,
-    libraryDependencies += scalaTest % Test
   )
   .dependsOn(core, util)
   .dependsOn(x.map(x => x: ClasspathDep[ProjectReference]):_*)
@@ -36,8 +34,6 @@ val x: Seq[Project] = for {
   Project(s"x$i", file(s"modules/module$i"))
     .settings(
       name := s"x$i",
-      libraryDependencies += spark,
-      libraryDependencies += scalaTest % Test
     )
     .dependsOn(core, util)
 

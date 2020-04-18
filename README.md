@@ -469,3 +469,138 @@ Executed in   50.64 secs   fish           external
    sys time    4.67 secs  173.00 micros    4.67 secs 
 
 ```
+
+## 22 modules (but only core and util depends on spark)
+
+around 35s like before
+
+```shell script
+~/g/scala-seed-project (master|✚2) $ sbt update
+[info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
+[info] Loading global plugins from /home/joao/.sbt/1.0/plugins
+[info] Total time: 2 sec
+[info] Loading project definition from /home/joao/git/scala-seed-project/project
+[info] Total time: 0 sec
+[info] Loading settings for project root from build.sbt ...
+[info] Resolving key references (19936 settings) ...
+[info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Total time: 33 sec
+[info]   x13 / update : 8 sec
+[info]   x17 / update : 8 sec
+[info]   x7 / update  : 8 sec
+[info]   x8 / update  : 8 sec
+[info]   core / update: 7 sec
+[info]   util / update: 6 sec
+[info]   x20 / update : 6 sec
+[info]   x2 / update  : 5 sec
+[info]   x4 / update  : 5 sec
+[info]   x11 / update : 4 sec
+[info]   x6 / update  : 4 sec
+[info]   x16 / update : 4 sec
+[info]   x5 / update  : 4 sec
+[info]   x15 / update : 3 sec
+[info]   x1 / update  : 3 sec
+[info]   x18 / update : 3 sec
+[info]   x10 / update : 2 sec
+[info]   x3 / update  : 2 sec
+[info]   x12 / update : 2 sec
+[info]   x14 / update : 2 sec
+[success] Total time: 34 s, completed Apr 18, 2020, 10:36:46 PM
+wrote /home/joao/git/scala-seed-project/target/traces/build.trace
+~/g/scala-seed-project (master|✚2) $ time sbt update
+[info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
+[info] Loading global plugins from /home/joao/.sbt/1.0/plugins
+[info] Total time: 2 sec
+[info] Loading project definition from /home/joao/git/scala-seed-project/project
+[info] Total time: 0 sec
+[info] Loading settings for project root from build.sbt ...
+[info] Resolving key references (19936 settings) ...
+[info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Total time: 34 sec
+[info]   x15 / update : 11 sec
+[info]   x7 / update  :  8 sec
+[info]   x2 / update  :  8 sec
+[info]   x3 / update  :  7 sec
+[info]   core / update:  6 sec
+[info]   x1 / update  :  5 sec
+[info]   util / update:  5 sec
+[info]   x5 / update  :  5 sec
+[info]   x6 / update  :  5 sec
+[info]   x11 / update :  5 sec
+[info]   x12 / update :  5 sec
+[info]   x13 / update :  4 sec
+[info]   x17 / update :  4 sec
+[info]   x8 / update  :  3 sec
+[info]   x14 / update :  3 sec
+[info]   x20 / update :  3 sec
+[info]   x10 / update :  2 sec
+[info]   x9 / update  :  2 sec
+[info]   x16 / update :  2 sec
+[info]   x18 / update :  2 sec
+[info]   x4 / update  :  2 sec
+[info]   x19 / update :  2 sec
+[success] Total time: 34 s, completed Apr 18, 2020, 10:38:58 PM
+wrote /home/joao/git/scala-seed-project/target/traces/build.trace
+
+________________________________________________________
+Executed in   50.06 secs   fish           external 
+   usr time  130.31 secs  146.68 millis  130.17 secs 
+   sys time    4.10 secs    0.00 millis    4.10 secs 
+
+```
