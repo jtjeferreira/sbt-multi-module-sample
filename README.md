@@ -229,3 +229,100 @@ Executed in   31.17 secs   fish           external
    sys time    3.15 secs  543.00 micros    3.15 secs 
 
 ```
+
+## 12 modules
+
+around 25s
+
+```shell script
+~/g/scala-seed-project (master|✚1) $ sbt update
+[info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
+[info] Loading global plugins from /home/joao/.sbt/1.0/plugins
+[info] Total time: 2 sec
+[info] Loading project definition from /home/joao/git/scala-seed-project/project
+[info] Total time: 0 sec
+[info] Loading settings for project root from build.sbt ...
+[info] Resolving key references (11438 settings) ...
+[info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Total time: 24 sec
+[info]   x2 / update  : 9 sec
+[info]   x3 / update  : 7 sec
+[info]   x1 / update  : 7 sec
+[info]   util / update: 7 sec
+[info]   core / update: 6 sec
+[info]   x4 / update  : 6 sec
+[info]   x9 / update  : 6 sec
+[info]   x7 / update  : 5 sec
+[info]   x10 / update : 5 sec
+[info]   x8 / update  : 4 sec
+[info]   x6 / update  : 3 sec
+[info]   x5 / update  : 2 sec
+[success] Total time: 25 s, completed Apr 18, 2020, 9:36:00 PM
+wrote /home/joao/git/scala-seed-project/target/traces/build.trace
+~/g/scala-seed-project (master|✚1) $ time sbt update
+[info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
+[info] Loading global plugins from /home/joao/.sbt/1.0/plugins
+[info] Total time: 2 sec
+[info] Loading project definition from /home/joao/git/scala-seed-project/project
+[info] Total time: 0 sec
+[info] Loading settings for project root from build.sbt ...
+[info] Resolving key references (11438 settings) ...
+[info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[info] Total time: 0 sec
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Total time: 24 sec
+[info]   x10 / update : 10 sec
+[info]   x2 / update  :  9 sec
+[info]   x5 / update  :  7 sec
+[info]   x1 / update  :  6 sec
+[info]   util / update:  6 sec
+[info]   x6 / update  :  6 sec
+[info]   core / update:  6 sec
+[info]   x7 / update  :  4 sec
+[info]   x8 / update  :  3 sec
+[info]   x4 / update  :  3 sec
+[info]   x3 / update  :  3 sec
+[info]   x9 / update  :  3 sec
+[success] Total time: 24 s, completed Apr 18, 2020, 9:37:58 PM
+wrote /home/joao/git/scala-seed-project/target/traces/build.trace
+
+________________________________________________________
+Executed in   39.32 secs   fish           external 
+   usr time  110.61 secs  343.00 micros  110.61 secs 
+   sys time    3.43 secs  182.00 micros    3.43 secs 
+
+```
