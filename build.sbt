@@ -11,8 +11,10 @@ lazy val root = (project in file("."))
     libraryDependencies += spark,
     libraryDependencies += scalaTest % Test
   )
-  .dependsOn(core, util, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10)
-  .aggregate(core, util, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10)
+  .dependsOn(core, util)
+  .dependsOn(x.map(x => x: ClasspathDep[ProjectReference]):_*)
+  .aggregate(core, util)
+  .aggregate(x.map(x => x: ProjectReference):_*)
 
 lazy val core = (project in file("modules/core"))
   .settings(
@@ -29,7 +31,7 @@ lazy val util = (project in file("modules/util"))
   )
 
 val x: Seq[Project] = for {
-  i <- 1 to 10
+  i <- 1 to 20
 } yield
   Project(s"x$i", file(s"modules/module$i"))
     .settings(
@@ -52,5 +54,15 @@ lazy val x7 = x(6)
 lazy val x8 = x(7)
 lazy val x9 = x(8)
 lazy val x10 = x(9)
+lazy val x11 = x(10)
+lazy val x12 = x(11)
+lazy val x13 = x(12)
+lazy val x14 = x(13)
+lazy val x15 = x(14)
+lazy val x16 = x(15)
+lazy val x17 = x(16)
+lazy val x18 = x(17)
+lazy val x19 = x(18)
+lazy val x20 = x(19)
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
