@@ -4,8 +4,10 @@ ThisBuild / scalaVersion     := "2.12.10"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.example"
 ThisBuild / organizationName := "example"
-ThisBuild / useCoursier := false
-ThisBuild / updateOptions := updateOptions.value.withCachedResolution(true)
+//ThisBuild / useCoursier := false
+//ThisBuild / updateOptions := updateOptions.value.withCachedResolution(true)
+
+ThisBuild / csrConfiguration := csrConfiguration.value.withChecksums(Vector(None))
 
 lazy val root = (project in file("."))
   .settings(
