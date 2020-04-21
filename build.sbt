@@ -7,12 +7,13 @@ ThisBuild / organizationName := "example"
 //ThisBuild / useCoursier := false
 //ThisBuild / updateOptions := updateOptions.value.withCachedResolution(true)
 
-ThisBuild / csrConfiguration := csrConfiguration.value.withChecksums(Vector(None))
+def csrConfigurationSettings(): sbt.Def.SettingsDefinition = csrConfiguration := csrConfiguration.value.withChecksums(Vector(None))
 
 lazy val root = (project in file("."))
   .settings(
     name := "Scala Seed Project",
   )
+  .settings(csrConfigurationSettings())
   .dependsOn(core, util)
   .dependsOn(x.map(x => x: ClasspathDep[ProjectReference]):_*)
   .aggregate(core, util)
@@ -24,6 +25,7 @@ lazy val core = (project in file("modules/core"))
     libraryDependencies += spark,
     libraryDependencies += scalaTest % Test
   )
+  .settings(csrConfigurationSettings())
 
 lazy val util = (project in file("modules/util"))
   .settings(
@@ -31,6 +33,7 @@ lazy val util = (project in file("modules/util"))
     libraryDependencies += spark,
     libraryDependencies += scalaTest % Test
   )
+  .settings(csrConfigurationSettings())
 
 val x: Seq[Project] = for {
   i <- 1 to 20
@@ -39,6 +42,7 @@ val x: Seq[Project] = for {
     .settings(
       name := s"x$i",
     )
+    .settings(csrConfigurationSettings())
     .dependsOn(core, util)
 
 

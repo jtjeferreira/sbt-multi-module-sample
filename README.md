@@ -9,7 +9,7 @@
 | 12 modules | 25s  |
 | 22 modules | 35s  |
 | 22 modules ivy + cachedResolution  | 19s  |
-| 22 modules no checksums| 29s  |
+| 22 modules no checksums| 27s  |
 
 ## Single module with spark dependency
 
@@ -686,11 +686,11 @@ Executed in   34.84 secs   fish           external
 ~/g/scala-seed-project (master|✚1…) $ sbt update
 [info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
 [info] Loading global plugins from /home/joao/.sbt/1.0/plugins
-[info] Total time: 2 sec
+[info] Total time: 1 sec
 [info] Loading project definition from /home/joao/git/scala-seed-project/project
 [info] Total time: 0 sec
 [info] Loading settings for project root from build.sbt ...
-[info] Resolving key references (19937 settings) ...
+[info] Resolving key references (19959 settings) ...
 [info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
 [info] Total time: 0 sec
 [info] Total time: 0 sec
@@ -720,39 +720,37 @@ Executed in   34.84 secs   fish           external
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
-[info] Total time: 29 sec
-[info]   x14 / update : 8 sec
-[info]   x1 / update  : 7 sec
-[info]   x12 / update : 6 sec
-[info]   util / update: 6 sec
+[info] Total time: 26 sec
+[info]   x6 / update  : 7 sec
+[info]   x11 / update : 5 sec
+[info]   x4 / update  : 5 sec
+[info]   x15 / update : 5 sec
 [info]   core / update: 5 sec
 [info]   x7 / update  : 5 sec
-[info]   x20 / update : 4 sec
-[info]   x8 / update  : 4 sec
-[info]   x15 / update : 4 sec
-[info]   x3 / update  : 3 sec
-[info]   x17 / update : 3 sec
+[info]   util / update: 4 sec
+[info]   x17 / update : 4 sec
+[info]   x14 / update : 4 sec
+[info]   x13 / update : 4 sec
+[info]   x12 / update : 3 sec
 [info]   x5 / update  : 3 sec
-[info]   x2 / update  : 3 sec
-[info]   x9 / update  : 3 sec
-[info]   x16 / update : 3 sec
-[info]   x13 / update : 3 sec
+[info]   x1 / update  : 2 sec
 [info]   x10 / update : 2 sec
-[info]   x11 / update : 2 sec
-[info]   x19 / update : 2 sec
+[info]   x9 / update  : 2 sec
+[info]   x16 / update : 2 sec
+[info]   x20 / update : 2 sec
 [info]   x18 / update : 2 sec
-[info]   x4 / update  : 2 sec
-[info]   x6 / update  : 2 sec
-[success] Total time: 29 s, completed Apr 20, 2020, 9:17:22 PM
+[info]   x8 / update  : 2 sec
+[info]   x3 / update  : 2 sec
+[success] Total time: 27 s, completed Apr 21, 2020, 1:03:51 AM
 wrote /home/joao/git/scala-seed-project/target/traces/build.trace
-~/g/scala-seed-project (master|✚2…) $ time sbt update
+~/g/scala-seed-project (master|✚1…) $ time sbt update
 [info] Loading settings for project global-plugins from sbt-updates.sbt,plugins.sbt,idea.sbt ...
 [info] Loading global plugins from /home/joao/.sbt/1.0/plugins
-[info] Total time: 2 sec
+[info] Total time: 1 sec
 [info] Loading project definition from /home/joao/git/scala-seed-project/project
 [info] Total time: 0 sec
 [info] Loading settings for project root from build.sbt ...
-[info] Resolving key references (19937 settings) ...
+[info] Resolving key references (19959 settings) ...
 [info] Set current project to Scala Seed Project (in build file:/home/joao/git/scala-seed-project/)
 [info] Total time: 0 sec
 [info] Total time: 0 sec
@@ -782,34 +780,32 @@ wrote /home/joao/git/scala-seed-project/target/traces/build.trace
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
-[info] Total time: 29 sec
-[info]   x17 / update : 8 sec
-[info]   x8 / update  : 8 sec
-[info]   x7 / update  : 6 sec
+[info] Total time: 26 sec
+[info]   x7 / update  : 8 sec
+[info]   x13 / update : 7 sec
+[info]   x8 / update  : 5 sec
 [info]   util / update: 5 sec
-[info]   x19 / update : 5 sec
-[info]   x3 / update  : 5 sec
-[info]   core / update: 5 sec
-[info]   x5 / update  : 4 sec
-[info]   x4 / update  : 4 sec
+[info]   core / update: 4 sec
+[info]   x17 / update : 4 sec
+[info]   x18 / update : 4 sec
+[info]   x12 / update : 4 sec
+[info]   x9 / update  : 4 sec
+[info]   x11 / update : 3 sec
 [info]   x15 / update : 3 sec
-[info]   x9 / update  : 3 sec
-[info]   x10 / update : 3 sec
-[info]   x18 / update : 3 sec
 [info]   x16 / update : 3 sec
-[info]   x14 / update : 3 sec
-[info]   x13 / update : 3 sec
-[info]   x12 / update : 3 sec
-[info]   x6 / update  : 3 sec
-[info]   x1 / update  : 2 sec
-[info]   x2 / update  : 2 sec
-[info]   x11 / update : 2 sec
+[info]   x10 / update : 3 sec
+[info]   x1 / update  : 3 sec
+[info]   x4 / update  : 3 sec
+[info]   x6 / update  : 2 sec
+[info]   x19 / update : 2 sec
+[info]   x14 / update : 2 sec
 [info]   x20 / update : 2 sec
-[success] Total time: 30 s, completed Apr 20, 2020, 9:29:57 PM
+[info]   x3 / update  : 2 sec
+[success] Total time: 26 s, completed Apr 21, 2020, 1:16:25 AM
 wrote /home/joao/git/scala-seed-project/target/traces/build.trace
 
 ________________________________________________________
-Executed in   47.91 secs   fish           external 
-   usr time  122.56 secs  812.00 micros  122.56 secs 
-   sys time    3.71 secs  116.00 micros    3.71 secs 
+Executed in   38.36 secs   fish           external 
+   usr time  102.90 secs  567.00 micros  102.90 secs 
+   sys time    2.52 secs  146.00 micros    2.52 secs 
 ```
