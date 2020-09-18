@@ -1,3 +1,4 @@
+-J-Xmx4G
 #misc sbt options
 #affects closeClassLoaders, but not allowZombieClassLoaders
 #-Dsbt.classloader.close=true #
