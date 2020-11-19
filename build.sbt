@@ -9,7 +9,7 @@ ThisBuild / updateOptions := updateOptions.value.withCachedResolution(true)
 
 ThisBuild / update / logLevel := Level.Debug
 
-def csrConfigurationSettings(): sbt.Def.SettingsDefinition = csrConfiguration := csrConfiguration.value.withChecksums(Vector(None))
+def csrConfigurationSettings(): sbt.Def.SettingsDefinition = csrConfiguration := csrConfiguration.value//.withChecksums(Vector(None))
 
 lazy val root = (project in file("."))
   .settings(

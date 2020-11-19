@@ -10,3 +10,8 @@
 -Dsbt.task.timings.threshold=1
 #coursier
 #-Dcoursier.verbosity=1
+#GC
+#-J-XX:+PrintGCDetails
+-J-Xlog:gc+heap+exit
+#async-profiler
+-J-agentpath:/home/joao/async-profiler-1.8.2-linux-x64/build/libasyncProfiler.so=start,file=profile.svg
