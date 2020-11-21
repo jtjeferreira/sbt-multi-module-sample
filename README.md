@@ -4,6 +4,7 @@
 |-----------|------|
 | 22 modules (sbt 1.4.3) | 19s  |
 | 22 modules (sbt 1.4.3) COURSIER_PROGRESS=false | 11s  |
+| 22 modules (sbt 1.5.0-SNAPSHOT-fb58802f4a45a38af758fbba9df485f51670e487) COURSIER_PROGRESS=false | 12s  |
 
 ## 22 modules sbt 1.4.3
 
@@ -149,4 +150,76 @@ ________________________________________________________
 Executed in   18,68 secs   fish           external 
    usr time  122,47 secs  260,00 micros  122,47 secs 
    sys time    3,58 secs   94,00 micros    3,58 secs 
+```
+
+## 22 modules sbt 1.5.0-SNAPSHOT COURSIER_PROGRESS=false
+
+```
+time sbt update                                                                                                       26.5s  sáb 21 nov 2020 21:04:36
+[info] welcome to sbt 1.5.0-SNAPSHOT (AdoptOpenJDK Java 11.0.8)
+[info] loading settings for project global-plugins from plugins.sbt ...
+[info] loading global plugins from /home/joao/.sbt/1.0/plugins
+[info] Total time: 0 sec
+[info] loading project definition from /home/joao/git/sbt-multi-module-sample/project
+[info] Total time: 0 sec
+[info] loading settings for project root from build.sbt ...
+[info] resolving key references (22991 settings) ...
+[info] set current project to Scala Seed Project (in build file:/home/joao/git/sbt-multi-module-sample/)
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Total time: 11 sec
+[info]   x13 / update : 4 sec
+[info]   x11 / update : 4 sec
+[info]   x17 / update : 4 sec
+[info]   x8 / update  : 4 sec
+[info]   x6 / update  : 4 sec
+[info]   x12 / update : 4 sec
+[info]   x18 / update : 4 sec
+[info]   x2 / update  : 4 sec
+[info]   x16 / update : 4 sec
+[info]   x15 / update : 4 sec
+[info]   x10 / update : 4 sec
+[info]   x19 / update : 4 sec
+[info]   util / update: 3 sec
+[info]   core / update: 3 sec
+[info]   x9 / update  : 2 sec
+[info]   x14 / update : 2 sec
+[info]   x1 / update  : 2 sec
+[info]   x4 / update  : 2 sec
+[info]   x5 / update  : 2 sec
+[info]   x7 / update  : 2 sec
+[info]   x20 / update : 2 sec
+[info]   x3 / update  : 2 sec
+[success] Total time: 12 s, completed Nov 21, 2020, 9:04:58 PM
+[18,592s][info][gc,heap,exit] Heap
+[18,592s][info][gc,heap,exit]  garbage-first heap   total 1048576K, used 627587K [0x00000000c0000000, 0x0000000100000000)
+[18,592s][info][gc,heap,exit]   region size 1024K, 322 young (329728K), 3 survivors (3072K)
+[18,592s][info][gc,heap,exit]  Metaspace       used 106112K, capacity 114885K, committed 119248K, reserved 1144832K
+[18,592s][info][gc,heap,exit]   class space    used 16499K, capacity 20912K, committed 23296K, reserved 1048576K
+
+________________________________________________________
+Executed in   19,68 secs   fish           external 
+   usr time  128,84 secs  272,00 micros  128,84 secs 
+   sys time    3,76 secs  101,00 micros    3,76 secs 
 ```
