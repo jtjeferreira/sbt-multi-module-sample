@@ -14,4 +14,4 @@
 #-J-XX:+PrintGCDetails
 -J-Xlog:gc+heap+exit
 #async-profiler
--J-agentpath:/home/joao/async-profiler-1.8.2-linux-x64/build/libasyncProfiler.so=start,file=profile.svg
+#-J-agentpath:/home/joao/async-profiler-1.8.2-linux-x64/build/libasyncProfiler.so=start,file=profile.svg
