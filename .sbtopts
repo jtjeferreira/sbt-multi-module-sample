@@ -6,8 +6,9 @@
 -Dsbt.traces=true
 #timings see sbt.internal.TaskTimings
 -Dsbt.task.timings=true
--Dsbt.task.timings.unit=s
--Dsbt.task.timings.threshold=1
+#-Dsbt.task.timings.on.shutdown=true
+-Dsbt.task.timings.unit=ms
+-Dsbt.task.timings.threshold=800
 #coursier
 #-Dcoursier.verbosity=1
 #GC
